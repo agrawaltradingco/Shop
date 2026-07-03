@@ -1,0 +1,583 @@
+/*=========================================================
+    ABOUT PAGE
+=========================================================*/
+
+
+/*==========================================
+    HERO
+==========================================*/
+
+.about-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#FCFAF7,#F5F8F3);
+
+}
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:550px;
+
+    height:550px;
+
+    border-radius:50%;
+
+    background:rgba(46,90,68,.05);
+
+    top:-220px;
+
+    right:-180px;
+
+}
+
+.about-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(212,178,111,.08);
+
+    left:-120px;
+
+    bottom:-120px;
+
+}
+
+.about-hero-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.about-hero-content p{
+
+    max-width:600px;
+
+    margin-top:20px;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+.about-hero-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+
+/*==========================================
+    OUR STORY
+==========================================*/
+
+.our-story{
+
+    position:relative;
+
+    background:var(--white);
+
+}
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.story-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.story-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.story-card{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    padding:28px;
+
+    background:var(--white);
+
+    border-radius:24px;
+
+    border:1px solid rgba(46,90,68,.06);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.story-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.story-card i{
+
+    width:65px;
+
+    min-width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    font-size:1.4rem;
+
+}
+
+.story-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.story-card p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================
+    STATISTICS
+==========================================*/
+
+.about-stats{
+
+    background:linear-gradient(180deg,#FCFAF7,#F6F8F4);
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-box{
+
+    background:var(--white);
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.stat-box h2{
+
+    margin-bottom:12px;
+
+    color:var(--primary);
+
+}
+
+.stat-box p{
+
+    color:var(--light-text);
+
+}
+/*==========================================
+    WHY CHOOSE US
+==========================================*/
+
+.why-choose{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--white);
+
+}
+
+.why-choose::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(46,90,68,.04);
+
+    right:-180px;
+
+    top:-180px;
+
+}
+
+.why-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:var(--white);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid rgba(46,90,68,.06);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.why-card i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+}
+
+.why-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================
+    MISSION & VISION
+==========================================*/
+
+.mission-vision{
+
+    background:linear-gradient(180deg,#FCFAF7,#F5F8F3);
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.mission-card{
+
+    background:var(--white);
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-sm);
+
+    border-top:6px solid var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.mission-card.vision{
+
+    border-top:6px solid var(--secondary);
+
+}
+
+.mission-icon{
+
+    width:85px;
+
+    height:85px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.mission-card.vision .mission-icon{
+
+    background:#FBF3E4;
+
+    color:var(--secondary);
+
+}
+
+.mission-card h2{
+
+    margin-bottom:18px;
+
+}
+
+.mission-card p{
+
+    color:var(--light-text);
+
+    line-height:1.9;
+
+}
+
+
+
+/*==========================================
+    ABOUT RESPONSIVE
+==========================================*/
+
+@media(max-width:1100px){
+
+.about-hero-grid,
+
+.story-grid,
+
+.mission-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.about-hero-content,
+
+.story-content{
+
+text-align:center;
+
+}
+
+.story-card{
+
+text-align:left;
+
+}
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero{
+
+min-height:auto;
+
+padding:80px 0;
+
+}
+
+.story-card{
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.story-card i{
+
+margin-bottom:5px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.mission-card{
+
+padding:35px;
+
+text-align:center;
+
+}
+
+.mission-icon{
+
+margin:0 auto 25px;
+
+}
+
+}

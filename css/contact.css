@@ -1,0 +1,760 @@
+/*=========================================================
+    CONTACT PAGE
+=========================================================*/
+
+
+/*==========================================
+    HERO
+==========================================*/
+
+.contact-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:60vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#FCFAF7,#F5F8F3);
+
+}
+
+.contact-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:550px;
+
+    height:550px;
+
+    border-radius:50%;
+
+    background:rgba(46,90,68,.05);
+
+    top:-220px;
+
+    right:-180px;
+
+}
+
+.contact-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(212,178,111,.08);
+
+    left:-120px;
+
+    bottom:-120px;
+
+}
+
+.contact-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.contact-hero-content h1{
+
+    margin:20px 0;
+
+}
+
+.contact-hero-content p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+}
+
+
+
+/*==========================================
+    CONTACT DETAILS
+==========================================*/
+
+.contact-details{
+
+    background:var(--white);
+
+}
+
+.contact-card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.contact-card{
+
+    background:var(--white);
+
+    border-radius:24px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    border:1px solid rgba(46,90,68,.06);
+
+    transition:var(--transition);
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.contact-card i{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    border-radius:22px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.contact-card .btn{
+
+    width:100%;
+
+}
+
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media(max-width:1100px){
+
+.contact-card-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-hero{
+
+min-height:50vh;
+
+padding:60px 0;
+
+}
+
+.contact-card-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.contact-card{
+
+padding:30px 22px;
+
+}
+
+.contact-card i{
+
+width:70px;
+
+height:70px;
+
+font-size:1.5rem;
+
+}
+
+}
+/*=========================================================
+    MAP & BUSINESS HOURS
+=========================================================*/
+
+.location-section{
+
+    background:#FCFAF7;
+
+}
+
+.location-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.map-container{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-lg);
+
+    min-height:550px;
+
+}
+
+.map-container iframe{
+
+    width:100%;
+
+    height:550px;
+
+    border:none;
+
+}
+
+.business-hours{
+
+    background:var(--white);
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.business-hours h2{
+
+    margin:18px 0;
+
+}
+
+.business-hours p{
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+.hours-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.hour-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.hour-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.hour-row span{
+
+    color:var(--text);
+
+}
+
+.hour-row strong{
+
+    color:var(--primary);
+
+}
+
+
+
+/*=========================================================
+    CONTACT FORM
+=========================================================*/
+
+.contact-form-section{
+
+    background:var(--white);
+
+}
+
+.contact-form{
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+    background:var(--white);
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    transition:var(--transition);
+
+    outline:none;
+
+    background:#fafafa;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:170px;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    background:var(--white);
+
+    box-shadow:0 0 0 4px rgba(46,90,68,.08);
+
+}
+
+.contact-form button{
+
+    margin-top:10px;
+
+}
+
+
+
+/*=========================================================
+    RESPONSIVE
+=========================================================*/
+
+@media(max-width:1100px){
+
+.location-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.business-hours{
+
+text-align:center;
+
+}
+
+.hour-row{
+
+text-align:left;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.map-container{
+
+min-height:350px;
+
+}
+
+.map-container iframe{
+
+height:350px;
+
+}
+
+.business-hours{
+
+padding:30px;
+
+}
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+margin-bottom:20px;
+
+}
+
+.contact-form{
+
+padding:30px 22px;
+
+margin-top:40px;
+
+}
+
+.hour-row{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:6px;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+}
+
+}
+/*=========================================================
+    FAQ CTA
+=========================================================*/
+
+.contact-faq{
+
+    background:linear-gradient(135deg,#FCFAF7,#F5F8F3);
+
+}
+
+.faq-banner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:60px;
+
+    background:var(--white);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-md);
+
+    border:1px solid rgba(46,90,68,.06);
+
+}
+
+.faq-content{
+
+    max-width:700px;
+
+}
+
+.faq-content h2{
+
+    margin:18px 0;
+
+}
+
+.faq-content p{
+
+    line-height:1.8;
+
+}
+
+
+
+/*=========================================================
+    FORM PLACEHOLDER
+=========================================================*/
+
+.form-group input::placeholder,
+
+.form-group textarea::placeholder{
+
+    color:#999;
+
+}
+
+
+
+/*=========================================================
+    CONTACT CARD HOVER ICON
+=========================================================*/
+
+.contact-card:hover i{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    transform:rotate(-8deg);
+
+}
+
+
+
+/*=========================================================
+    MAP HOVER
+=========================================================*/
+
+.map-container{
+
+    transition:var(--transition);
+
+}
+
+.map-container:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+
+/*=========================================================
+    BUSINESS HOURS EFFECT
+=========================================================*/
+
+.hour-row{
+
+    transition:var(--transition);
+
+}
+
+.hour-row:hover{
+
+    padding-left:10px;
+
+}
+
+
+
+/*=========================================================
+    CONTACT FORM BUTTON
+=========================================================*/
+
+.contact-form button{
+
+    min-width:220px;
+
+}
+
+
+
+/*=========================================================
+    RESPONSIVE
+=========================================================*/
+
+@media(max-width:992px){
+
+.faq-banner{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:45px;
+
+}
+
+.faq-banner .btn{
+
+width:auto;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.faq-banner{
+
+padding:35px 25px;
+
+gap:30px;
+
+}
+
+.faq-banner .btn{
+
+width:100%;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.business-hours{
+
+padding:25px 20px;
+
+}
+
+.contact-form{
+
+padding:25px 18px;
+
+}
+
+.contact-card{
+
+padding:25px 18px;
+
+}
+
+.faq-banner{
+
+border-radius:22px;
+
+}
+
+}

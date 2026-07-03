@@ -1,0 +1,1469 @@
+/* ==========================================================
+   AGRAWAL TRADING CO.
+   GLOBAL STYLESHEET
+   ========================================================== */
+
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root{
+
+    --primary:#2E5A44;
+    --primary-dark:#234735;
+
+    --secondary:#D4B26F;
+
+    --bg:#FCFAF7;
+
+    --white:#ffffff;
+
+    --black:#222222;
+
+    --text:#444444;
+
+    --light-text:#777777;
+
+    --border:#ECECEC;
+
+    --whatsapp:#25D366;
+
+    --radius-sm:10px;
+
+    --radius-md:18px;
+
+    --radius-lg:28px;
+
+    --transition:.35s ease;
+
+    --shadow-sm:0 4px 15px rgba(0,0,0,.05);
+
+    --shadow-md:0 12px 35px rgba(0,0,0,.08);
+
+    --shadow-lg:0 20px 60px rgba(0,0,0,.12);
+
+    --container:1280px;
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--black);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+
+.container{
+
+    width:min(var(--container),92%);
+
+    margin:auto;
+
+}
+
+
+/* =========================
+   COMMON SECTION SPACING
+========================= */
+
+section{
+
+    padding:100px 0;
+
+}
+
+.section-small{
+
+    padding:70px 0;
+
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1{
+
+    font-size:3.5rem;
+
+    line-height:1.2;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:2.6rem;
+
+    line-height:1.2;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+h3{
+
+    font-size:1.25rem;
+
+    color:var(--primary);
+
+}
+
+p{
+
+    color:var(--text);
+
+    font-size:1rem;
+
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading{
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.section-heading p{
+
+    margin-top:20px;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-whatsapp{
+
+    background:var(--whatsapp);
+
+    color:white;
+
+}
+
+.btn-whatsapp:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+.top-bar{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:10px 20px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    border-bottom:3px solid var(--secondary);
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:85px;
+
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.brand-title{
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    letter-spacing:1px;
+
+}
+
+.brand-subtitle{
+
+    color:var(--secondary);
+
+    font-size:.8rem;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.navbar a{
+
+    position:relative;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+    color:var(--black);
+
+}
+
+.navbar a:hover{
+
+    color:var(--primary);
+
+}
+
+.navbar a.active{
+
+    color:var(--primary);
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:var(--transition);
+
+}
+
+.navbar a:hover::after,
+
+.navbar a.active::after{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   MOBILE MENU
+========================================================== */
+
+.mobile-menu{
+
+    display:none;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    background:#1f3529;
+
+    color:#ddd;
+
+    padding-top:80px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1.5fr;
+
+    gap:60px;
+
+}
+
+.footer-column h3,
+
+.footer-column h4{
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.footer-column p{
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+.footer-column ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.footer-column a{
+
+    transition:var(--transition);
+
+}
+
+.footer-column a:hover{
+
+    color:var(--secondary);
+
+    padding-left:6px;
+
+}
+
+.footer-bottom{
+
+    margin-top:70px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#999;
+
+}
+
+
+/* ==========================================================
+   COMMON GRID
+========================================================== */
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.image-radius{
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f3f3f3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+/* ==========================================================
+   COMMON UTILITIES
+========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.mt-1{
+
+    margin-top:15px;
+
+}
+
+.mt-2{
+
+    margin-top:30px;
+
+}
+
+.mt-3{
+
+    margin-top:50px;
+
+}
+
+.mb-1{
+
+    margin-bottom:15px;
+
+}
+
+.mb-2{
+
+    margin-bottom:30px;
+
+}
+
+.mb-3{
+
+    margin-bottom:50px;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+.d-flex{
+
+    display:flex;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.justify-center{
+
+    justify-content:center;
+
+}
+
+
+
+/* ==========================================================
+   COMMON TRANSITIONS
+========================================================== */
+
+img,
+
+button,
+
+a,
+
+.card{
+
+    transition:var(--transition);
+
+}
+
+
+
+/* ==========================================================
+   COMMON HOVER EFFECTS
+========================================================== */
+
+.hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.03);
+
+}
+
+.hover-shadow:hover{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+
+/* ==========================================================
+   SIMPLE FADE ANIMATION
+========================================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+   IMAGE HELPERS
+========================================================== */
+
+.image-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.image-contain{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+.grid-4{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+width:94%;
+
+}
+
+}
+
+
+
+/* @media(max-width:900px){
+
+.navbar{
+
+display:none;
+
+}
+
+.mobile-menu{
+
+display:block;
+
+}
+
+h1{
+
+font-size:2.8rem;
+
+}
+
+h2{
+
+font-size:2.2rem;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+} */
+
+@media(max-width:900px){
+
+.mobile-menu{
+
+display:block;
+
+z-index:1001;
+
+}
+
+.navbar{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:#ffffff;
+
+padding:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-top:1px solid var(--border);
+
+animation:fadeMenu .3s ease;
+
+}
+
+.navbar.active{
+
+display:block;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+align-items:flex-start;
+
+}
+
+.navbar a{
+
+display:block;
+
+width:100%;
+
+padding:10px 0;
+
+}
+
+h1{
+
+font-size:2.8rem;
+
+}
+
+h2{
+
+font-size:2.2rem;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.grid-3,
+
+.grid-4{
+
+grid-template-columns:1fr;
+
+}
+
+.section-heading{
+
+margin-bottom:50px;
+
+}
+
+h1{
+
+font-size:2.3rem;
+
+}
+
+h2{
+
+font-size:1.9rem;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.brand-title{
+
+font-size:1.3rem;
+
+}
+
+.brand-subtitle{
+
+letter-spacing:2px;
+
+}
+
+.top-bar{
+
+font-size:.8rem;
+
+padding:8px;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+}
+@keyframes fadeMenu{
+
+from{
+
+opacity:0;
+
+transform:translateY(-10px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/*==========================================
+    PAGE TRANSITIONS
+==========================================*/
+
+.page-banner{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:140px 0 90px;
+
+    background:linear-gradient(135deg,#FCFAF7,#F5F8F3);
+
+    text-align:center;
+
+}
+
+.page-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(46,90,68,.05);
+
+    top:-220px;
+
+    right:-200px;
+
+}
+
+.page-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(212,178,111,.08);
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+.page-banner .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.page-banner h1{
+
+    margin-bottom:18px;
+
+}
+
+.page-banner p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+/*==========================================
+    IMAGE OVERLAY
+==========================================*/
+
+.image-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.image-box img{
+
+    transition:.6s;
+
+}
+
+.image-box:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.image-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.45)
+
+    );
+
+}
+
+
+
+/*==========================================
+    ICON BOX
+==========================================*/
+
+.icon-box{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    border-radius:20px;
+
+    font-size:1.6rem;
+
+}
+
+
+
+/*==========================================
+    COMMON BADGE
+==========================================*/
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#EDF6F0;
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+
+/*==========================================
+    COMMON LIST
+==========================================*/
+
+.check-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.check-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    color:var(--text);
+
+}
+
+.check-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+
+
+/*==========================================
+    SECTION DIVIDER
+==========================================*/
+
+.divider{
+
+    width:90px;
+
+    height:5px;
+
+    border-radius:20px;
+
+    background:var(--secondary);
+
+    margin:18px auto 0;
+
+}
+
+
+
+/*==========================================
+    LOADING ANIMATIONS
+==========================================*/
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.float{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+
+
+/*==========================================
+    FADE LEFT
+==========================================*/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-40px);
+
+    transition:.8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+
+/*==========================================
+    FADE RIGHT
+==========================================*/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(40px);
+
+    transition:.8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+
+/*==========================================
+    SCALE IN
+==========================================*/
+
+.scale-in{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    transition:.8s ease;
+
+}
+
+.scale-in.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
